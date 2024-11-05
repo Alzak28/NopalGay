@@ -9,7 +9,7 @@ public class Clickable : MonoBehaviour
     private bool canShoot = true;
 
     // Variabel baru untuk menyimpan damage yang akan diberikan
-    [SerializeField] private int damage = 10;
+    [SerializeField] private int damage = 50;
 
     private void OnMouseDown()
     {
@@ -42,7 +42,7 @@ public class Clickable : MonoBehaviour
 
             if (target != null)
             {
-                target.TakeDamage(damage);
+                object value = target.TakeDamage(damage);
                 Debug.Log("Damage dealt to target: " + damage);
             }
             else

@@ -112,8 +112,6 @@ public class Reticle : MonoBehaviour
         }
     }
 
-
-
     private int count = 0;
     private IEnumerator LerpObject(GameObject item, Vector3 pos, float time)
     {

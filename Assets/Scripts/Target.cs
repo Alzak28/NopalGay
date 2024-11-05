@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Damageable : MonoBehaviour
+public class Target : MonoBehaviour
 {
     [SerializeField] private int health = 100; // Kesehatan awal
 
